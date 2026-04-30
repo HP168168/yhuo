@@ -6,19 +6,20 @@ import styles from '@/components/sections/CTA.module.css';
 export default function About() {
   return (
     <>
-      <PageHeader 
-        title="关于言火AI" 
-        subtitle="领先的 AI GEO 优化专家，致力于让品牌在生成式 AI 时代赢得先机。" 
+      <PageHeader
+        title="关于言火AI"
+        subtitle="领先的 AI GEO 优化专家，致力于让品牌在生成式 AI 时代赢得先机。"
       />
-      
+
       {/* About Section */}
       <section className="section-padding">
         <div className="container">
           <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
             <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem', color: '#1E5289' }}>公司介绍</h2>
             <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: '#444', marginBottom: '2rem' }}>
-              言火AI 是一家专注于 AI 搜索优化（GEO）的技术服务公司。我们拥有一支深耕 AI 算法与全网营销的专家团队，
-              致力于帮助企业在 Kimi、豆包、DeepSeek 等生成式搜索引擎中获得更高的品牌曝光度与推荐权重。
+              言火人工智能科技有限公司（简称“言火AI”）是一家专注于为企业提供AI营销GEO（生成式引擎优化）优化方案的科技企业。
+              公司的品牌愿景是“成为中国AI服务商知名品牌”，品牌使命是“让企业获客更简单”，核心价值观为“技术为根·用户为本”。
+              言火AI依托深厚的技术积累，致力于帮助企业在AI搜索时代抢占决策位，解决因缺乏AI曝光而导致的流量缺失、品牌失语、信任缺失和竞争被动等痛点。
             </p>
             <p style={{ fontSize: '1.2rem', lineHeight: '1.8', color: '#444' }}>
               在 AI 时代，传统的 SEO 正在向 GEO 演进。言火AI 通过独创的 AIGC 内容建模与权重算法，
@@ -67,7 +68,7 @@ export default function About() {
                 </li>
               </ul>
             </div>
-            
+
             <div className={styles.ctaBox} style={{ padding: '3rem', borderRadius: '30px', textAlign: 'center' }}>
               <div className={styles.content}>
                 <h2 className={styles.title} style={{ fontSize: '1.8rem', marginBottom: '1.5rem', color: 'white' }}>

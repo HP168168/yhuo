@@ -47,7 +47,7 @@ export default function Footer() {
           <ul>
             <li><Link href="/about">公司介绍</Link></li>
             <li><Link href="/cases">核心案例</Link></li>
-            <li><Link href="/knowledge">品牌知识库</Link></li>
+            {/* <li><Link href="/knowledge">品牌知识库</Link></li> */}
             <li><Link href="/faq">常见问题 (FAQ)</Link></li>
           </ul>
         </div>

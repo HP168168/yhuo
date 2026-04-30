@@ -13,7 +13,7 @@ const navLinks = [
   { name: 'GEO解决方案', href: '/solutions' },
   { name: '行业方案', href: '/industry' },
   { name: '案例中心', href: '/cases' },
-  { name: '品牌知识库', href: '/knowledge' },
+  // { name: '品牌知识库', href: '/knowledge' },
   { name: '常见问题', href: '/faq' },
   { name: '关于我们', href: '/about' },
 ];

@@ -247,7 +247,7 @@ export default function Cases() {
             textAlign: 'center',
             boxShadow: '0 20px 40px rgba(30, 82, 137, 0.2)'
           }}>
-            <Lightbulb size={48} style={{ marginBottom: '1.5rem', color: 'rgba(255,255,255,0.8)' }} />
+            <img src="logo_512_2.png" alt="言火 GEO服务专业建议" style={{ width: '150px', height: 'auto' }} />
             <h3 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>“言火 GEO” 洞察</h3>
             <p style={{
               fontSize: '1.2rem',

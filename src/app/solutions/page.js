@@ -1,16 +1,16 @@
 import PageHeader from '@/components/layout/PageHeader';
-import { 
-  Radar, 
-  Factory, 
-  LayoutDashboard, 
-  BarChart3, 
-  PenTool, 
-  Share2, 
-  Target, 
-  Zap, 
-  ShieldCheck, 
-  FileText, 
-  Map, 
+import {
+  Radar,
+  Factory,
+  LayoutDashboard,
+  BarChart3,
+  PenTool,
+  Share2,
+  Target,
+  Zap,
+  ShieldCheck,
+  FileText,
+  Map,
   Tags,
   Globe
 } from 'lucide-react';
@@ -19,9 +19,9 @@ import Image from 'next/image';
 export default function Solutions() {
   return (
     <>
-      <PageHeader 
-        title="GEO 解决方案" 
-        subtitle="从品牌可见度诊断到 AI 推荐率提升，让您的品牌成为 AI 时代的首选答案。" 
+      <PageHeader
+        title="GEO 解决方案"
+        subtitle="从品牌可见度诊断到 AI 推荐率提升，让您的品牌成为 AI 时代的首选答案。"
       />
 
       {/* Section 1: Strategic Cognition */}
@@ -39,8 +39,11 @@ export default function Solutions() {
               </p>
             </div>
             <div style={{ position: 'relative', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
-              <div style={{ width: '100%', height: '400px', background: 'linear-gradient(135deg, #1E5289 0%, #C12A2D 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '1.5rem', fontWeight: 'bold' }}>
-                SEO → GEO 演进图
+              <div style={{
+                width: '100%', height: '400px', background: 'linear-gradient(135deg, #1E5289 0%, #C12A2D 100%)',
+                display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '1.5rem', fontWeight: 'bold'
+              }}>
+                <img src="seo2geo.png" alt="SEO 到 GEO 演进图" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
               </div>
             </div>
           </div>
@@ -123,7 +126,7 @@ export default function Solutions() {
               </div>
             </div>
             <div style={{ background: '#f0f4f8', borderRadius: '24px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#1E5289', fontSize: '1.2rem', fontWeight: 'bold', minHeight: '400px' }}>
-              [实施框架闭环图]
+              <img src="6_img.png" alt="实施框架闭环图" style={{ width: '100%', height: '400px', objectFit: 'cover' }} />
             </div>
           </div>
         </div>

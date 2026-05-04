@@ -1,11 +1,11 @@
 import PageHeader from '@/components/layout/PageHeader';
-import { 
-  ShoppingCart, 
-  MapPin, 
-  Stethoscope, 
-  GraduationCap, 
-  Briefcase, 
-  Settings, 
+import {
+  ShoppingCart,
+  MapPin,
+  Stethoscope,
+  GraduationCap,
+  Briefcase,
+  Settings,
   Rocket,
   CheckCircle2,
   Lightbulb
@@ -108,19 +108,19 @@ const industries = [
 export default function Industry() {
   return (
     <>
-      <PageHeader 
-        title="行业 GEO 解决方案" 
-        subtitle="深耕不同行业特性，为您量身定制最契合业务属性的 AI 搜索截流方案。" 
+      <PageHeader
+        title="行业 GEO 解决方案"
+        subtitle="深耕不同行业特性，为您量身定制最契合业务属性的 AI 搜索截流方案。"
       />
 
       <section className="section-padding">
         <div className="container">
           <div style={{ display: 'flex', flexDirection: 'column', gap: '5rem' }}>
             {industries.map((item, index) => (
-              <div key={item.id} style={{ 
-                display: 'grid', 
-                gridTemplateColumns: index % 2 === 0 ? '1fr 1.2fr' : '1.2fr 1fr', 
-                gap: '4rem', 
+              <div key={item.id} style={{
+                display: 'grid',
+                gridTemplateColumns: index % 2 === 0 ? '1fr 1.2fr' : '1.2fr 1fr',
+                gap: '4rem',
                 alignItems: 'center',
                 padding: '4rem',
                 background: index % 2 === 0 ? 'white' : '#f8fbff',
@@ -130,14 +130,14 @@ export default function Industry() {
                 {index % 2 === 0 ? (
                   <>
                     <div style={{ textAlign: 'center', padding: '2rem' }}>
-                      <div style={{ 
-                        width: '100px', 
-                        height: '100px', 
-                        borderRadius: '30px', 
-                        background: 'rgba(30, 82, 137, 0.1)', 
-                        color: '#1E5289', 
-                        display: 'flex', 
-                        alignItems: 'center', 
+                      <div style={{
+                        width: '100px',
+                        height: '100px',
+                        borderRadius: '30px',
+                        background: 'rgba(30, 82, 137, 0.1)',
+                        color: '#1E5289',
+                        display: 'flex',
+                        alignItems: 'center',
                         justifyContent: 'center',
                         margin: '0 auto 2rem'
                       }}>
@@ -202,14 +202,14 @@ export default function Industry() {
                       </div>
                     </div>
                     <div style={{ textAlign: 'center', padding: '2rem' }}>
-                      <div style={{ 
-                        width: '100px', 
-                        height: '100px', 
-                        borderRadius: '30px', 
-                        background: 'rgba(193, 42, 45, 0.1)', 
-                        color: '#C12A2D', 
-                        display: 'flex', 
-                        alignItems: 'center', 
+                      <div style={{
+                        width: '100px',
+                        height: '100px',
+                        borderRadius: '30px',
+                        background: 'rgba(193, 42, 45, 0.1)',
+                        color: '#C12A2D',
+                        display: 'flex',
+                        alignItems: 'center',
                         justifyContent: 'center',
                         margin: '0 auto 2rem'
                       }}>
@@ -226,7 +226,7 @@ export default function Industry() {
 
           {/* Footer Advice */}
           <div style={{ marginTop: '6rem', padding: '4rem', background: '#1E5289', borderRadius: '40px', color: 'white', textAlign: 'center' }}>
-            <Lightbulb size={48} style={{ marginBottom: '1.5rem', color: 'rgba(255,255,255,0.8)' }} />
+            <img src="logo_512_2.png" alt="言火 GEO服务专业建议" style={{ width: '150px', height: 'auto' }} />
             <h3 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>“言火 GEO” 服务建议</h3>
             <p style={{ fontSize: '1.2rem', lineHeight: '1.8', maxWidth: '900px', margin: '0 auto', color: 'rgba(255,255,255,0.9)' }}>
               不同行业的 GEO 打法差异巨大，切忌生搬硬套。“言火 GEO” 团队提供行业专属模型与深度诊断，能为您量身定制最契合业务属性的 GEO 落地方案，助您在 AI 搜索中精准截流。

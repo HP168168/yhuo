@@ -8,7 +8,7 @@ import styles from './FAQ.module.css';
 const faqs = [
   {
     question: '什么是 GEO (生成式引擎优化)？',
-    answer: 'GEO (Generative Engine Optimization) 是 SEO 的进化版。它专注于优化品牌在 Kimi、豆包、ChatGPT、DeepSeek 等 AI 生成式搜索引擎中的可见度、推荐率和信任度，让 AI 在回答用户问题时能够优先、准确、正面地推荐您的品牌。'
+    answer: 'GEO (Generative Engine Optimization)生成式引擎优化 。它专注于优化品牌在 豆包、Kimi、千问、DeepSeek 等 AI 生成式搜索引擎中的可见度、推荐率和信任度，让 AI 在回答用户问题时能够优先、准确、正面地推荐您的品牌。'
   },
   {
     question: 'GEO 和传统的 SEO 有什么区别？',
@@ -38,17 +38,17 @@ export default function FAQ() {
         <div className={styles.faqList}>
           {faqs.map((faq, index) => (
             <div key={index} className={styles.faqItem}>
-              <button 
+              <button
                 className={`${styles.question} ${activeIndex === index ? styles.active : ''}`}
                 onClick={() => setActiveIndex(activeIndex === index ? null : index)}
               >
                 <span>{faq.question}</span>
                 {activeIndex === index ? <Minus size={20} /> : <Plus size={20} />}
               </button>
-              
+
               <AnimatePresence>
                 {activeIndex === index && (
-                  <motion.div 
+                  <motion.div
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: 'auto', opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}

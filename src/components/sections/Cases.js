@@ -14,8 +14,8 @@ const cases = [
   },
   {
     category: '教育行业',
-    title: '头部艺术教育机构品牌重塑',
-    results: ['Kimi 搜索首位推荐', '品牌提及率增长 400%', '月咨询量翻倍'],
+    title: '头部电商教育机构品牌重塑',
+    results: ['豆包 搜索首位推荐', '品牌提及率增长 400%', '月咨询量翻倍'],
     tag: '快速增长'
   },
   {
@@ -40,7 +40,7 @@ export default function Cases() {
 
         <div className={styles.grid}>
           {cases.map((item, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               className={styles.caseCard}
               initial={{ opacity: 0, scale: 0.95 }}

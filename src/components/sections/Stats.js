@@ -4,10 +4,10 @@ import { motion } from 'framer-motion';
 import styles from './Stats.module.css';
 
 const stats = [
-  { label: '服务客户数量', value: '500+', suffix: '家' },
+  { label: '服务客户数量', value: '200+', suffix: '家' },
   { label: '平均曝光增长', value: '300%', suffix: '+' },
   { label: 'AI推荐提升', value: '150%', suffix: '+' },
-  { label: '平台覆盖数量', value: '20+', suffix: '个' },
+  { label: '平台覆盖数量', value: '9+', suffix: '个' },
   { label: '年均业绩转化提升', value: '45%', suffix: '+' }
 ];
 
@@ -17,7 +17,7 @@ export default function Stats() {
       <div className="container">
         <div className={styles.grid}>
           {stats.map((stat, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               className={styles.statItem}
               initial={{ opacity: 0, y: 20 }}

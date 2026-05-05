@@ -2,50 +2,34 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem 2rem;
-  border-radius: 8px;
+  padding: 0.85rem 2rem;
+  border-radius: 10px;
   font-weight: 600;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   gap: 0.5rem;
   font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
-.btn-primary {
-  background-color: var(--primary-red);
-  color: white;
-}
+.btn-small { padding: 0.6rem 1.4rem; font-size: 0.9rem; border-radius: 8px; }
+.btn-large { padding: 1rem 2.5rem; font-size: 1.1rem; border-radius: 12px; }
 
-.btn-primary:hover {
-  background-color: #A02325;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(193, 42, 45, 0.2);
-}
+.btn-primary { background-color: var(--primary-red); color: white; box-shadow: 0 6px 20px rgba(184, 37, 42, 0.25); }
+.btn-primary:hover { background-color: #9A1F23; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(184, 37, 42, 0.35); }
 
-.btn-secondary {
-  background-color: var(--primary-blue);
-  color: white;
-}
+.btn-secondary { background-color: var(--primary-blue); color: white; box-shadow: 0 6px 20px rgba(26, 77, 124, 0.25); }
+.btn-secondary:hover { background-color: var(--secondary-blue); transform: translateY(-2px); }
 
-.btn-secondary:hover {
-  background-color: var(--secondary-blue);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(30, 82, 137, 0.2);
-}
+.btn-outline { border: 2px solid var(--primary-blue); color: var(--primary-blue); background: transparent; box-shadow: none; }
+.btn-outline:hover { background-color: var(--primary-blue); color: white; transform: translateY(-2px); }
 
-.btn-outline {
-  border: 2px solid var(--primary-blue);
-  color: var(--primary-blue);
-}
+.btn-ghost { color: var(--primary-blue); background: transparent; box-shadow: none; }
+.btn-ghost:hover { background-color: var(--glass-blue); transform: none; }
 
-.btn-outline:hover {
-  background-color: var(--primary-blue);
-  color: white;
-}
-
-.btn-ghost {
-  color: var(--primary-blue);
-}
-
-.btn-ghost:hover {
-  background-color: var(--glass-blue);
+@media (max-width: 640px) {
+  .btn { padding: 0.75rem 1.6rem; font-size: 0.95rem; }
+  .btn-small { padding: 0.5rem 1.2rem; font-size: 0.85rem; }
 }

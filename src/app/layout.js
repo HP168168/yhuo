@@ -1,6 +1,7 @@
 import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import AOSInit from '@/components/AOSInit';
 
 export const metadata = {
   title: '言火AI | 专业的 AI GEO 优化专家',
@@ -12,10 +13,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="zh-CN">
       <body>
+        <AOSInit />
         <Navbar />
-        <main style={{ minHeight: '100vh', paddingTop: '0' }}>
-          {children}
-        </main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

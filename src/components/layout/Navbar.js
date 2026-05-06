@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 import Button from '../ui/Button';
 import styles from './Navbar.module.css';
@@ -37,8 +38,7 @@ export default function Navbar() {
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={`container ${styles.navContainer}`}>
         <Link href="/" className={styles.logo}>
-          <span className={styles.logoIcon}>言</span>
-          <span className={styles.logoText}>火AI</span>
+          <Image src="/logo.png" alt="言火AI Logo" width={140} height={45} priority />
         </Link>
 
         <div className={styles.desktopMenu}>

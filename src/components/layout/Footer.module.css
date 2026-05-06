@@ -129,4 +129,21 @@
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
+  
+  .qrCol {
+    align-items: flex-start;
+  }
+  
+  .qrCol h3 {
+    text-align: left;
+  }
+  
+  .qrCol h3::after {
+    left: 0;
+    transform: none;
+  }
+  
+  .qrCodeBox {
+    align-items: flex-start;
+  }
 }

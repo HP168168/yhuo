@@ -2,6 +2,7 @@ import PageHeader from '@/components/layout/PageHeader';
 import { Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
 import Image from 'next/image';
 import styles from '@/components/sections/CTA.module.css';
+import aboutStyles from './About.module.css';
 
 export default function About() {
   return (
@@ -32,7 +33,7 @@ export default function About() {
       {/* Contact Section */}
       <section className="section-padding" id="contact" style={{ background: '#f8fbff' }}>
         <div className="container">
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+          <div className={aboutStyles.contactGrid}>
             <div>
               <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>联系我们</h2>
               <p style={{ color: '#666', marginBottom: '2.5rem', fontSize: '1.1rem' }}>

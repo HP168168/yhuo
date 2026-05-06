@@ -70,7 +70,8 @@
 
 @media (max-width: 640px) {
   .grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
   
   .value {

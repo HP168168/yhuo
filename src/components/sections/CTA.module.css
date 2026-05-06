@@ -60,6 +60,12 @@
   justify-content: center;
 }
 
+.qrImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .qrIcon {
   color: var(--primary-blue);
   font-weight: 700;
@@ -118,7 +124,7 @@
   }
   
   .qrCode {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
   }
 }

@@ -107,4 +107,8 @@
   .title {
     font-size: 2rem;
   }
+
+  .card {
+    padding: 1.5rem;
+  }
 }

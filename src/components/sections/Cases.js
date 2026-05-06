@@ -35,7 +35,7 @@ export default function Cases() {
             <span className={styles.sub}>核心案例 / CASE STUDIES</span>
             <h2 className={styles.title}>实战效果见证品牌实力</h2>
           </div>
-          <Button variant="outline">查看更多案例</Button>
+          <Button variant="outline"><a href="/cases">查看更多案例</a></Button>
         </div>
 
         <div className={styles.grid}>

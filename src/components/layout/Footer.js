@@ -55,14 +55,14 @@ export default function Footer() {
         <div className={styles.qrCol}>
           <h3>关注我们</h3>
           <div className={styles.qrCodeBox}>
-             <Image 
-               src="/yhuo_WeChatOfficialAccount.jpg" 
-               alt="言火AI 公众号" 
-               width={120} 
-               height={120} 
-               className={styles.qrImage}
-             />
-             <p>公众号：言火AI</p>
+            <Image
+              src="/yhuo_WeChatOfficialAccount.jpg"
+              alt="言火GEO 公众号"
+              width={120}
+              height={120}
+              className={styles.qrImage}
+            />
+            <p>公众号：言火GEO</p>
           </div>
         </div>
       </div>

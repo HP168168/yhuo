@@ -31,13 +31,17 @@ export default function Hero() {
           </motion.p>
           
           <motion.div className={styles.actions} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }}>
-            <Button variant="primary" className={styles.primaryBtn}>
-              免费获取 AI 可见度报告
-              <ArrowRight size={18} />
-            </Button>
-            <Button variant="outline" className={styles.secondaryBtn}>
-              预约 1V1 咨询
-            </Button>
+            <Link href="/#cta-section" style={{ display: 'inline-block' }}>
+              <Button variant="primary" className={styles.primaryBtn}>
+                免费获取 AI 可见度报告
+                <ArrowRight size={18} />
+              </Button>
+            </Link>
+            <Link href="/#cta-section" style={{ display: 'inline-block' }}>
+              <Button variant="outline" className={styles.secondaryBtn}>
+                预约 1V1 咨询
+              </Button>
+            </Link>
           </motion.div>
           
           <motion.div className={styles.trustBadge} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5, delay: 0.4 }}>

@@ -50,7 +50,9 @@ export default function Navbar() {
         </div>
         
         <div className={styles.navActions}>
-          <Button variant="primary" size="small">免费诊断</Button>
+          <Link href="/#cta-section">
+            <Button variant="primary" size="small">免费诊断</Button>
+          </Link>
         </div>
 
         <button className={styles.menuToggle} onClick={() => setIsOpen(!isOpen)} aria-label={isOpen ? '关闭菜单' : '打开菜单'}>
@@ -65,7 +67,9 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Button variant="primary" className={styles.mobileCtaBtn} onClick={handleLinkClick}>免费诊断</Button>
+          <Link href="/#cta-section" style={{ width: '100%', display: 'block' }} onClick={handleLinkClick}>
+            <Button variant="primary" className={styles.mobileCtaBtn}>免费诊断</Button>
+          </Link>
         </div>
       </div>
     </nav>

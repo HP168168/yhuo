@@ -69,7 +69,13 @@ export default function Footer() {
 
       <div className={styles.bottomBar}>
         <div className="container">
-          <p>&copy; {currentYear} 言火AI (www.yhuo.com). All Rights Reserved.</p>
+          <p>
+            &copy; {currentYear} 言火AI (www.yhuo.com). All Rights Reserved.
+            <span className={styles.icpDivider}> | </span>
+            <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" className={styles.icpLink}>
+              粤ICP备2022005634号-3
+            </a>
+          </p>
         </div>
       </div>
     </footer>

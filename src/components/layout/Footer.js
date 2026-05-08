@@ -49,6 +49,7 @@ export default function Footer() {
             <li><Link href="/cases">核心案例</Link></li>
             {/* <li><Link href="/knowledge">品牌知识库</Link></li> */}
             <li><Link href="/faq">常见问题 (FAQ)</Link></li>
+            <li><a href="https://www.yanhuoai.com" target="_blank" rel="noopener noreferrer">言火AI官网</a></li>
           </ul>
         </div>
 
